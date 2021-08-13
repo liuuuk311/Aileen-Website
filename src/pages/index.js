@@ -209,7 +209,7 @@ export const pageQuery = graphql`
       }
     }
     turtle: allImageSharp(
-      filter: { original: { src: { regex: "/turtle/" } } }
+      filter: { original: { src: { regex: "/sea_sighting/" } } }
     ) {
       edges {
         node {

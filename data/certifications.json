@@ -2,26 +2,31 @@
   {
     "name": "Advanced Open Water Diver",
     "authority": "PADI",
-    "issued": "Aug 2021"
+    "issued": "Aug 2021",
+    "logo": "padi"
   },
   {
-    "name": "Video Editing in DaVinci Resolve 17",
+    "name": "DaVinci Resolve 17",
     "authority": "Udemy",
-    "issued": "Apr 2021"
+    "issued": "Apr 2021",
+    "logo": "davinci"
   },
   {
     "name": "R Programming",
     "authority": "Udemy",
-    "issued": "Feb 2021"
+    "issued": "Feb 2021",
+    "logo": "r"
   },
   {
     "name": "IELTS Academic (Score: 8.0)",
     "authority": "IELTS Official",
-    "issued": "Mar 2019"
+    "issued": "Mar 2019",
+    "logo": "ielts"
   },
   {
     "name": "DELE B2",
     "authority": "Istituto Cervantes",
-    "issued": "Nov 2014"
+    "issued": "Nov 2014",
+    "logo": "dele"
   }
 ]

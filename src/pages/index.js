@@ -135,6 +135,7 @@ export const pageQuery = graphql`
           id
           issued
           authority
+          logo
         }
       }
     }

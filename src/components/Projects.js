@@ -1,44 +1,48 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 
 import media from '../utils/style';
 
 const Item = styled.article`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   margin: 0 auto;
-  height: 100%;
 
   ${media.xs`
-    width: 90%;
+  flex-direction: column;
   `}
 `;
 
-const Grid = styled.section`
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+const Container = styled.section`
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     max-width: 1150px;
-    align-items: flex-start;
+    align-items: flex-center;
+`;
 
-    ${media.xs`
-        grid-template-columns: 1fr;
-    `}
+const TextContainer = styled.div`
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 50%;
+
+  ${media.xs`
+    order: 2 !important;
+  `}
 `;
 
 const Title = styled.h3`
   display: block;
   letter-spacing: 2px;
+  font-size: 1.5em;
   font-weight: 700;
   float: left;
-  height: 3rem;
   ${media.xs`
-    float:none;
+    float: none;
     height: auto;
+    font-size: 1em;
   `}
 `;
 
@@ -46,36 +50,41 @@ const Title = styled.h3`
 const Description = styled.div`
   display: block;
   clear: both;
-  text-align: center;
   margin: 1rem 0;
 `;
 
 const Video = styled.iframe`
-border-radius: .35em;
-margin: 2rem 0;
+  flex: 0 1 50%;
+  border-radius: .35em;
+  margin: 2rem 0;
+  ${media.xs`
+    border-radius: 0;
+    flex: 0 1 auto;
+  `}
 `;
-
 
 function Projects(props) {
   const { edges } = props;
 
   return (
-    <Grid>
-      {edges.map(({ node: item }) => (
+    <Container> 
+      {edges.map(({ node: item }, index) => 
         <Item key={item.id}>
-            <Video 
-                src={item.link} 
-                width="360" 
-                height="200" 
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title="Embedded youtube"></Video>
+          <TextContainer style={{order: index % 2 === 0 ? 0 : 1}}>
             <Title>{item.title}</Title>
             <Description>{item.description}</Description>
+          </TextContainer>
+          <Video 
+              src={item.link} 
+              width="360" 
+              height="320" 
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              title="Embedded youtube"></Video>
         </Item>
-      ))}
-    </Grid>
+    )}
+    </Container>
   );
 }
 

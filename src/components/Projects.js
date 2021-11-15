@@ -56,7 +56,7 @@ const Description = styled.div`
 const Video = styled.iframe`
   flex: 0 1 50%;
   border-radius: .35em;
-  margin: 2rem 0;
+  margin: 2rem auto;
   ${media.xs`
     border-radius: 0;
     flex: 0 1 auto;

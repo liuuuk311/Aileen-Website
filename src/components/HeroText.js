@@ -29,9 +29,9 @@ const StyledTypist = styled(Typist)`
 function HeroText(props) {
   return (
     <StyledTypist 
-    sentences={['I am a marine scientist-to-be', 
-                'I am a MSc student at Utrecht University', 
-                'I am based in Milan, Italy', 
+    sentences={['Welcome to my website', 
+                'I am Aileen', 
+                'I am a Marine Scientist', 
                 'Keep scrolling to get to know me!']} 
     loop={true}>
     </StyledTypist>

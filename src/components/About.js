@@ -49,8 +49,7 @@ function About(props) {
             <Avatar fixed={fluid} imgStyle={{ objectFit: "contain" }} />
             <Description>
                 <Paragraph>
-                    After graduating in Biological Sciences I am currently doing
-                    my master's degree in Marine Sciences to pursue my dream of becoming a marine biologist.
+                    I have just obtained a master's degree in Marine Sciences to pursue my dream of becoming a marine biologist.
                 </Paragraph>
                 <Paragraph>
                     My research interests are wide and include marine biology and ecology,

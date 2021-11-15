@@ -51,7 +51,8 @@ const SectionTitle = styled.h2`
 
 const IndexPage = ({ data }) => {
   return (<Layout>
-    <Hero videos={data.videos} poster={data.poster.edges[0].node.fluid.srcWebp}>
+    {/* <Hero videos={data.videos} poster={data.poster.edges[0].node.fluid.srcWebp}> */}
+    <Hero fluid={data.hero.edges[0].node.fluid}>
       <HeroText />
       <Social edges={data.allSocialJson.edges}/>
     </Hero>
@@ -221,18 +222,6 @@ export const pageQuery = graphql`
         }
       }
     }
-    poster: allImageSharp(
-      filter: { original: { src: { regex: "/video_poster/" } } }
-    ) {
-      edges {
-        node {
-          id
-          fluid(maxWidth: 1920) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
     allEducationJson {
       edges {
         node {
@@ -256,13 +245,5 @@ export const pageQuery = graphql`
         }
       }
     }
-    videos: file(relativePath: {eq: "seashore.mp4"}) {
-      first: videoWebP(maxWidth: 1920, fps: 25) {
-          path
-          }
-      second: videoH264(maxWidth: 1920, fps: 25) {
-          path
-        }
-      }
   }
 `;

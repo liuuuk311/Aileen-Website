@@ -6,6 +6,7 @@ const Container = styled.div`
   display: flex;
   position: relative;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
 `;
 
 const Overlay = styled.div`

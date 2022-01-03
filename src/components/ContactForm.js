@@ -35,7 +35,7 @@ const Message = styled.textarea`
   box-sizing: border-box;
 `;
 
-const Submit = styled.input`
+const Submit = styled.button`
   border: solid 1px #ccc;
   padding: 15px 30px;
   margin: 0 0 20px;
@@ -74,8 +74,7 @@ function ContactForm(props) {
     />
     <Submit
       type="submit"
-      value={'Send'}
-    />
+    >Send</Submit>
   </form>
 )
   }

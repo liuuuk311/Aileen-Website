@@ -50,7 +50,7 @@ const Submit = styled.input`
 
 function ContactForm(props) {
   return (
-  <form action="https://getform.io/f/7aa1d449-3d35-4dc5-812d-1ed3274b005c" method="POST">
+  <form data-netlify="true">
     <Name
       name="name"
       type="text"

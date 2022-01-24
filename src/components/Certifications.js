@@ -25,7 +25,7 @@ const Row = styled.div`
 const Grid = styled.section`
     display: grid;
     grid-gap: 4rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: flex-start;
     margin: 0 15%;
 

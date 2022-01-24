@@ -6,6 +6,12 @@
     "logo": "padi"
   },
   {
+    "name": "EFR-Primary Care & Secondary Care",
+    "authority": "PADI",
+    "issued": "Sep 2021",
+    "logo": "efr"
+  },
+  {
     "name": "DaVinci Resolve 17",
     "authority": "Udemy",
     "issued": "Apr 2021",
@@ -28,11 +34,5 @@
     "authority": "Istituto Cervantes",
     "issued": "Nov 2014",
     "logo": "dele"
-  },
-  {
-    "name": "EFR-Primary Care & Secondary Care",
-    "authority": "PADI",
-    "issued": "Sep 2021",
-    "logo": "efr"
   }
 ]

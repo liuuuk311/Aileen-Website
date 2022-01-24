@@ -125,6 +125,18 @@ function Certifications(props) {
           }
         }
       }
+      efr: allImageSharp(
+        filter: { original: { src: { regex: "/efr/" } } }
+      ) {
+        edges {
+          node {
+            id
+            fluid(quality: 100) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
     }
     `)
 

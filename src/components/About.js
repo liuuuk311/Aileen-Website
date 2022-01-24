@@ -56,12 +56,12 @@ function About(props) {
                     marine conservation and the effects of climate change on the marine environment.
                 </Paragraph>
                 <Paragraph>
-                    In my future career, I would like to combine my passion for the ocean with
+                    In my career, I would like to combine my passion for the ocean with
                     the field of science communication through video making and editing.
                 </Paragraph>
                 <Paragraph>
                     I am moved by a strong will to learn and get involved by always giving my best.
-                    Some of my distinctive skills include motivation and commitment, as well as adaptability, time management and planning.
+                    Some of my distinctive skills include self-motivation, adaptability, reliability and organisation.
                 </Paragraph>
             </Description>
         </Container>

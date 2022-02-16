@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Envelope as MailIcon } from 'styled-icons/fa-solid/Envelope.cjs';
 import { LinkedinIn as LinkedinIcon } from 'styled-icons/fa-brands/LinkedinIn.cjs';
 import { Twitter as TwitterIcon } from 'styled-icons/fa-brands/Twitter.cjs';
+import { Instagram as InstagramIcon } from 'styled-icons/fa-brands/Instagram.cjs';
 import scrollToElement from 'scroll-to-element';
 import Link from './Link';
 import ButtonLink from './ButtonLink';
@@ -31,9 +32,14 @@ function Social(props) {
   const linkedin = edges.find((o) => o.node.type === 'linkedin');
   const twitter = edges.find((o) => o.node.type === 'twitter');
   const mail = edges.find((o) => o.node.type === 'mail');
+  const instagram = edges.find((o) => o.node.type === 'instagram');
+
 
   return (
     <IconWrapper relative={props.relative}>
+    <Link aria-label={instagram.node.type} to={instagram.node.url}>
+        <InstagramIcon />
+      </Link>
       <Link aria-label={linkedin.node.type} to={linkedin.node.url}>
         <LinkedinIcon />
       </Link>

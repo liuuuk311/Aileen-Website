@@ -126,10 +126,7 @@ const Layout = ({ children, noMenu }) => (
             <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet"></link>
             <meta
               name="description"
-              content="After graduating in Biological Sciences I am currently doing 
-              my master's degree in Marine Sciences to pursue my dream of becoming a marine biologist. 
-              My research interests are wide and include marine biology and ecology, 
-              marine conservation and the effects of climate change on the marine environment."
+              content="Welcome to my website, here you can get to know me better!"
             />
           </Helmet>
           <Navbar menu={data.allMenuJson.edges} noMenu={noMenu} />

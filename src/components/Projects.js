@@ -1,8 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-
-
 import media from '../utils/style';
+import styled from 'styled-components';
 
 const Item = styled.article`
   display: flex;
@@ -74,7 +72,7 @@ function Projects(props) {
             <Title>{item.title}</Title>
             <Description>{item.description}</Description>
           </TextContainer>
-          <Video 
+          {item.link ? <Video 
               src={item.link} 
               width="360" 
               height="320" 
@@ -82,6 +80,7 @@ function Projects(props) {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               title="Embedded youtube"></Video>
+            : <Description>Video coming soon</Description> }
         </Item>
     )}
     </Container>

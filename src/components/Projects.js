@@ -51,10 +51,16 @@ const Description = styled.div`
   margin: 1rem 0;
 `;
 
+const ComingSoon = styled.div`
+  display: block;
+  clear: both;
+  margin: auto;
+`;
+
 const Video = styled.iframe`
   flex: 0 1 50%;
   border-radius: .35em;
-  margin: 2rem auto;
+  margin: 3rem auto;
   ${media.xs`
     border-radius: 0;
     flex: 0 1 auto;
@@ -80,7 +86,7 @@ function Projects(props) {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               title="Embedded youtube"></Video>
-            : <Description>Video coming soon</Description> }
+            : <ComingSoon>Video coming soon</ComingSoon> }
         </Item>
     )}
     </Container>

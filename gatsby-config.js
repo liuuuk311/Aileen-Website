@@ -52,5 +52,11 @@ module.exports = {
     // To learn more, visit: https://gatsby.app/offline
     'gatsby-plugin-offline',
     { resolve: 'gatsby-plugin-eslint' },
+    {
+      resolve: `gatsby-source-instagram-all`,
+      options: {
+        access_token: "IGQVJVYWZAOUWlkOEE0Ty1mNjN5RDdJQUZAzRUZAjblB2NGh4NW1nNUVCREtNcFhmUUY0UVo4Y1dyM2lsd0VkalBJQWw2R1hYSFY1OVRYaFRxQzBidVZAET0tTdHA2QVZA5ZAW9OS0RJWTNaQ0VBU2ZAQS184SAZDZD",
+      }
+ }
   ],
 };

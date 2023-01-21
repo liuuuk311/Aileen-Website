@@ -1,15 +1,16 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
-import styled, { createGlobalStyle } from 'styled-components';
-import reset from 'styled-reset';
-import styledNormalize from 'styled-normalize';
-import Social from '../components/Social';
 import 'typeface-pacifico';
 import 'typeface-raleway';
 import 'typeface-open-sans';
 
+import { StaticQuery, graphql } from 'gatsby';
+import styled, { createGlobalStyle } from 'styled-components';
+
+import Helmet from 'react-helmet';
 import Navbar from './Navbar';
+import React from 'react';
+import Social from '../components/Social';
+import reset from 'styled-reset';
+import styledNormalize from 'styled-normalize';
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -45,7 +46,16 @@ const GlobalStyle = createGlobalStyle`
 
   @media only screen and (max-width: 800px) {
     .parallax-img {
-      left: 0% !important;
+      left: 0% !important; 
+    }
+    .talk-parallax-img {
+      left: 100% !important; 
+    }
+    .boat-parallax-img {
+      left: 25% !important; 
+    }
+    .last-parallax-img {
+      left: 13% !important; 
     }
   }
 

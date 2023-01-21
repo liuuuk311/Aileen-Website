@@ -1,5 +1,5 @@
-import React from 'react';
 import { Link as GatsbyLink } from 'gatsby';
+import React from 'react';
 
 const Link = ({ children, to }) => {
   // Tailor the following test to your environment.

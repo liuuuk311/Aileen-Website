@@ -1,22 +1,21 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import { Box, Flex } from 'grid-styled';
 import styled, { css } from 'styled-components';
-import { Flex, Box } from 'grid-styled';
-import { Parallax } from 'react-parallax';
 
-import Experience from '../components/Experience';
 import About from '../components/About';
 import Certifications from '../components/Certifications';
-import Languages from '../components/Languages';
-import Projects from '../components/Projects';
-import Educations from '../components/Educations';
 import ContactForm from '../components/ContactForm';
+import Educations from '../components/Educations';
+import Experience from '../components/Experience';
 import Hero from '../components/Hero';
-import Layout from '../components/Layout';
 import HeroText from '../components/HeroText';
+import Languages from '../components/Languages';
+import Layout from '../components/Layout';
+import { Parallax } from 'react-parallax';
+import Projects from '../components/Projects';
+import React from 'react';
 import Social from '../components/Social';
-
-
+import Talks from '../components/Talks';
+import { graphql } from 'gatsby';
 import media from '../utils/style';
 
 const Section = styled.div`
@@ -64,6 +63,15 @@ const IndexPage = ({ data }) => {
       <SectionTitle>My Projects</SectionTitle>
       <Projects edges={data.allProjectJson.edges} />
     </Section>
+    {/* Immagine per le talks */}
+    <Parallax bgImage={data.talk.edges[0].node.fluid.srcWebp} strength={200} bgClassName={"talk-parallax-img"} >
+    
+      <div style={{ height: '750px' }} />
+    </Parallax>
+    <Section id="talks">
+      <SectionTitle>My Talks</SectionTitle>
+      <Talks edges={data.allTalksJson.edges} />
+    </Section>
     <Parallax bgImage={data.fieldwork.edges[0].node.fluid.srcWebp} strength={200} bgClassName={"parallax-img"}>
       <div style={{ height: '750px' }} />
     </Parallax>
@@ -78,14 +86,14 @@ const IndexPage = ({ data }) => {
       <SectionTitle>My Education</SectionTitle>
       <Educations edges={data.allEducationJson.edges} />
     </Section>
-    <Parallax bgImage={data.turtle.edges[0].node.fluid.srcWebp} strength={200} bgClassName={"parallax-img"}>
+    <Parallax bgImage={data.turtle.edges[0].node.fluid.srcWebp} strength={200} bgClassName={"boat-parallax-img"}>
       <div style={{ height: '750px' }} />
     </Parallax>
     <Section id="certifications" dark>
       <SectionTitle>My Certifications</SectionTitle>
       <Certifications edges={data.allCertificationsJson.edges} />
     </Section>
-    <Parallax bgImage={data.diving.edges[0].node.fluid.srcWebp} strength={200} bgClassName={"parallax-img"}>
+    <Parallax bgImage={data.diving.edges[0].node.fluid.srcWebp} strength={200} bgClassName={"last-parallax-img"}>
       <div style={{ height: '750px' }} />
     </Parallax>
     <Section id="languages">
@@ -113,6 +121,18 @@ export const pageQuery = graphql`
         node {
           url
           type
+        }
+      }
+    }
+    allTalksJson {
+      edges {
+        node {
+          id
+          title
+          event
+          location
+          link
+          date 
         }
       }
     }
@@ -176,6 +196,18 @@ export const pageQuery = graphql`
     }
     fieldwork: allImageSharp(
       filter: { original: { src: { regex: "/fieldwork/" } } }
+    ) {
+      edges {
+        node {
+          id
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+    talk: allImageSharp(
+      filter: { original: { src: { regex: "/test/" } } }
     ) {
       edges {
         node {

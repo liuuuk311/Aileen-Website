@@ -1,10 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
-import Typist from 'react-text-typist';
-
+import { TypeAnimation } from 'react-type-animation';
 import media from '../utils/style';
+import styled from 'styled-components';
 
-const StyledTypist = styled(Typist)`
+const StyledTypist = styled(TypeAnimation)`
   color: #000;
   letter-spacing: 17px;
   margin: 0 auto;
@@ -28,12 +27,19 @@ const StyledTypist = styled(Typist)`
 
 function HeroText(props) {
   return (
-    <StyledTypist 
-    sentences={['Welcome to my website', 
-                'I am Aileen', 
-                'I am a Marine Scientist', 
-                'Keep scrolling to get to know me!']} 
-    loop={true}>
+    <StyledTypist
+      sequence={[
+        'Welcome to my website',
+        500,
+        'I am Aileen',
+        1000,
+        'I am a Marine Scientist',
+        1000,
+        'Keep scrolling to get to know me!'
+      ]}
+      wrapper="div"
+      cursor={true}
+      repeat={Infinity}>
     </StyledTypist>
   );
 }

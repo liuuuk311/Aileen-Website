@@ -1,7 +1,3 @@
-import 'typeface-pacifico';
-import 'typeface-raleway';
-import 'typeface-open-sans';
-
 import { StaticQuery, graphql } from 'gatsby';
 import styled, { createGlobalStyle } from 'styled-components';
 

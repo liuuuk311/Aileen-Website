@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Envelope as MailIcon } from 'styled-icons/fa-solid/Envelope.cjs';
-import { LinkedinIn as LinkedinIcon } from 'styled-icons/fa-brands/LinkedinIn.cjs';
-import { Twitter as TwitterIcon } from 'styled-icons/fa-brands/Twitter.cjs';
-import { Instagram as InstagramIcon } from 'styled-icons/fa-brands/Instagram.cjs';
-import scrollToElement from 'scroll-to-element';
+// import ButtonLink from './ButtonLink';
+// import { Envelope } from '@styled-icons/fa-solid';
+import {Instagram as InstagramIcon} from '@styled-icons/fa-brands'
 import Link from './Link';
-import ButtonLink from './ButtonLink';
+import {LinkedinIn as LinkedinIcon} from '@styled-icons/fa-brands'
+import React from 'react';
+import {Twitter as TwitterIcon} from '@styled-icons/fa-brands'
+// import scrollToElement from 'scroll-to-element';
+import styled from 'styled-components';
 
 const IconWrapper = styled.div`
   position: absolute;
@@ -46,14 +46,15 @@ function Social(props) {
       <Link aria-label={twitter.node.type} to={twitter.node.url}>
         <TwitterIcon />
       </Link>
-      <ButtonLink
+      {/* <ButtonLink
         aria-label={mail.node.type}
         onClick={() => {
           scrollToElement(mail.node.url);
         }}
       >
-        <MailIcon />
-      </ButtonLink>
+
+
+        </ButtonLink> */}
     </IconWrapper>
   );
 }

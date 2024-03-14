@@ -49,16 +49,16 @@ function About(props) {
             <Avatar fixed={fluid} imgStyle={{ objectFit: "contain" }} />
             <Description>
                 <Paragraph>
-                   I am a marine scientist and I combine my passion and expertise with science outreach and education.
+                   I am a marine scientist with expertise and passion for science communication and education.
                 </Paragraph>
                 <Paragraph>
-                    Currently, I am working as a communication and social media officer for an Italian NGO that develops creative projects for the conservation of the marine environment.
+                    Throughout my studies, I conducted research projects focused on shorebirds and marine mammals, while developing a strong interest in science dissemination by creating videos and other contents for social media.
                 </Paragraph>
                 <Paragraph>
-                   Throughout my studies, I gained practical experience in shorebirds and marine mammal research, while writing blog posts and creating content for social media and videos to convey my work.
+                   Currently, I am working as a communication and social media manager for a non-profit organization dedicated to the effective conservation of Italian seas through innovative outreach and conservation projects.
                 </Paragraph>
                 <Paragraph>
-                   I am moved by a strong desire to learn and get involved by always giving my best effort. Some of my distinguishing skills include self-motivation, adaptability, reliability and organisation.
+                    I am moved by a strong desire to learn and get involved by always giving my best effort. Some of my distinguishing skills include self-motivation, adaptability, reliability and organization.
                 </Paragraph>
             </Description>
         </Container>

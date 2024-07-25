@@ -1,8 +1,29 @@
 [   
     {
+        "title": "Our health and the sea: benefits and threats of the Mediterranean",
+        "event": "Webinar for Sisal",
+        "location": "Online", 
+        "link": "",
+        "date": "July 8th, 2024"
+    },
+    {
+        "title": "Threats to marine health and solutions to change course",
+        "event": "Webinar for AXA Week for Good",
+        "location": "Online", 
+        "link": "",
+        "date": "June 4th, 2024"
+    },
+    {
+        "title": "Protecting the Sea: Sea Shepherd and Worldrise in defense of marine protected areas",
+        "event": "Talk at Fa' la cosa giusta!",
+        "location": "Milan, Italy", 
+        "link": "",
+        "date": "March 23rd, 2024"
+    },
+    {
         "title": "There's more in the blue: how and why to care for our Planet Ocean",
         "event": "Conference at \"Science Sundays 2022/2023\"",
-        "location": "Carpi", 
+        "location": "Carpi, Italy", 
         "link": "https://www.youtube.com/watch?v=Grn5oDWXZ68",
         "date": "December 4th, 2022"
     },
@@ -23,7 +44,7 @@
     {
         "title": "Circular economy and green transition",
         "event": "Debate at Revolution Culture 2022",
-        "location": "Acqui Terme", 
+        "location": "Acqui Terme, Italy", 
         "link": "",
         "date": "July 15th, 2022"
     }

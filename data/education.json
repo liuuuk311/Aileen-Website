@@ -8,20 +8,19 @@
     "description": "Modules: Introduction to Marine Sciences, Microbes and Biogeochemistry, Introduction to Physical Oceanography, Coastal Ecology, Evolutionary Paleobiology and Proxies, Oceans Law and Policy, Communicating Science with the Public."
   },
   {
-    "school": "Universitat de Barcelona",
-    "location": "Barcelona, Spain",
-    "program": "Erasmus+ Mobility Program",
-    "start": "2018",
-    "end": "2018",
-    "description": "Modules: Biology of Marine Invertebrates, Marine Ecology, Conservation of Biodiversity."
-
-  },
-  {
     "school": "Università degli studi di Milano-Bicocca",
     "location": "Milan, Italy",
     "program": "BSc Biological Sciences",
     "start": "2015",
     "end": "2018",
     "description": "Modules: Organic, Inorganic and Biological Chemistry, Physics, Mathematics and Statistics, Cytology and Anatomy, Zoology, Botany, Ecology, Molecular and Cellular Biology, Genetics, Animal and Plant Physiology, Microbiology and Immunology."
-  }
+  },
+   {
+    "school": "Universitat de Barcelona",
+    "location": "Barcelona, Spain",
+    "program": "International Student in Biology (Erasmus+)",
+    "start": "Feb 2018",
+    "end": "Jun 2018",
+    "description": "Modules: Biology of Marine Invertebrates, Marine Ecology, Conservation of Biodiversity."
+  },
 ]
